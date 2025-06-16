@@ -23,7 +23,7 @@ else:
     # Running as a .py file
     SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 """
-#Second option using pyinstaller
+# Second option using pyinstaller
 
 class RemoteConnectApp:
     def __init__(self, root):
