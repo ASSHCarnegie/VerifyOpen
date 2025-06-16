@@ -6,13 +6,24 @@
 """
 
 import os
+import sys
 import tkinter as tk
 from tkinter import ttk, messagebox
 import hashlib
 import requests
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))# First option using bat
 GITHUB_KEYS_URL = "https://raw.githubusercontent.com/ASSHCarnegie/VerifyOpen/main/BetaTestHashes"
+
+"""
+if getattr(sys, 'frozen', False):
+    # Running as a bundled .exe
+    SCRIPT_DIR = os.path.dirname(sys.executable)
+else:
+    # Running as a .py file
+    SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+"""
+#Second option using pyinstaller
 
 class RemoteConnectApp:
     def __init__(self, root):
