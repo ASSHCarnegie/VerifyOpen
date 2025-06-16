@@ -8,7 +8,7 @@ File structure examples:
 	- Max1
 	- Max2
 	- Max2
-- Hades
+- Group1
 	- Max2
 	- Paul1
 - Paul
