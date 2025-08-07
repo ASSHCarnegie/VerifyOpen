@@ -13,7 +13,7 @@ import hashlib
 import requests
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))# First option using bat
-GITHUB_KEYS_URL = "https://raw.githubusercontent.com/ASSHCarnegie/VerifyOpen/main/BetaTestHashes" # Add repo for hash veryfier
+GITHUB_KEYS_URL = "" # Add repo for hash veryfier
 
 """
 if getattr(sys, 'frozen', False):
@@ -172,3 +172,4 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = RemoteConnectApp(root)
     root.mainloop()
+
